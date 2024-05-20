@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musical Instruments</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #010c12; /* White background */
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            max-width: 900px; /* Limit the width of the content */
+            margin: 20px 0;
+            background-color: #000; /* Different color for the container */
+	    background: url("img/bg.jpg") 100% no-repeat repeat;
+            padding: 20px;
+            text-align: center; /* Center the text */
+	    color: #fff;	
+        }
+        header, footer {
+            background-color: #02314b;
+            color: #fff;
+            padding: 1em 0;
+        }
+        nav {
+            background-color: #01090c;
+            color: #fff;
+            padding: 1em;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px 0;
+        }
+
+	.contact-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .contact-form input, .contact-form textarea {
+            display: block;
+            width: 99%; /* Reduced width to 80% to fit better in the centered layout */
+            margin: 10px 0;
+            padding: 10px;
+        }
+        .contact-form button {
+            padding: 10px 20px;
+            background-color: #444;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #333;
+        }
+        .pictures img {
+            width: 300px;
+            height: 300px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to the World of Musical Instruments</h1>
+            <p>Explore different musical instruments and their beauty.</p>
+        </header>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#pictures">Pictures</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <section id="home">
+            <h2>About Musical Instruments</h2>
+            <p>Musical instruments are devices created or adapted to make musical sounds. Instruments are classified by how they produce sound, including string, wind, and percussion instruments.</p>
+        </section>
+
+        <section id="pictures" class="pictures">
+            <img src="img/Guitar.jpg" alt="Guitar">
+            <img src="img/drum.jpg" alt="Drum">
+            <img src="img/piano.jpg" alt="Piano">
+            <img src="img/violin.jpg" alt="Violin">
+        </section>
+
+        <section id="contact" class="contact-form">
+            <h2>Contact Us</h2>
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="tel" name="phone" placeholder="Your Phone Number" required>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Musical Instruments. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
